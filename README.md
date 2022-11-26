@@ -11,3 +11,15 @@ chmod a+x install.sh
 ```
 ./install.sh
 ```
+# 编辑配置文件
+```
+vim /etc/ipsec.conf
+```
+把yes改为no
+```
+sha2-truncbug= no
+```
+# 重启
+```
+servicr ipsec restart
+```
